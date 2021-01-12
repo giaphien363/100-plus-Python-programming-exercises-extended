@@ -296,6 +296,15 @@ def animal_calculator(total_legs, total_heads, legs_of_each_species):
 
 animal_calculator(94, 35, legs_of_each_species=[2,4])
 ```
+""" 
+solution by: Hien Co (vietnamese) -- python 3
+"""
+def solve(total_head, total_legs):
+	rabbit = (total_legs - 2*total_head)/2
+	chicken = total_head - rabbit
+	return f'chickens: {int(chicken)} and rabbits: {int(rabbit)}'
+print(solve(35,94))
+
 ---
 
 [**_go to previous day_**](https://github.com/darkprinx/100-plus-Python-programming-exercises-extended/blob/master/Status/Day_21.md "Day 21")
